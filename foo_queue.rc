@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CS_CONFIGVIEW DIALOGEX 0, 0, 330, 294
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Server Port :",IDC_STATIC,21,34,58,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_SERVERPORT,85,34,65,12,ES_AUTOHSCROLL
+    GROUPBOX        "Control Server Options",IDC_STATIC,7,7,316,280
+    LTEXT           "Changes to the 'Connection Options' will not take affect until the server is disabled/enabled.",IDC_STATIC,13,244,301,9
+    LTEXT           "Fields :",IDC_STATIC,21,135,23,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_METAFIELDS,49,135,260,12,ES_AUTOHSCROLL
+    CONTROL         "Server Enabled",IDC_SERVERENABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,34,65,16
+    CONTROL         "UTF-8 Output/Input",IDC_UTF8OUTPUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,174,89,12
+    LTEXT           "If 'UTF-8 Output/Input' is not checked the output and input will be converted to lower ASCII with non valid characters replaced by the '?' symbol.",IDC_STATIC,13,260,302,18
+    LTEXT           "Number of Clients :",IDC_STATIC,21,50,61,9,SS_CENTERIMAGE
+    GROUPBOX        "Connection Options",IDC_STATIC,14,21,302,93
+    LTEXT           "Allow Addresses :",IDC_STATIC,21,66,58,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONNECTIONMASK,85,66,224,12,ES_AUTOHSCROLL
+    GROUPBOX        "Output Options",IDC_STATIC,14,120,302,74
+    EDITTEXT        IDC_MAXCLIENTS,85,50,65,12,ES_AUTOHSCROLL
+    LTEXT           "Base Delimiter:",IDC_STATIC,158,174,54,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DELIMIT,216,174,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREVIEW,28,155,280,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    GROUPBOX        "General Options",IDC_STATIC,13,202,302,31
+    CONTROL         "Prevent clients from closing Foobar2000",IDC_PREVENTCLOSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,215,142,10
+    LTEXT           "Music Path:",IDC_STATIC,21,84,58,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DRIVE,85,84,40,14,ES_AUTOHSCROLL
+END
+
+IDD_MYPREFERENCES DIALOGEX 0, 0, 332, 288
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "FooQueue Preferences",IDC_STATIC,16,14,204,8
+    LISTBOX         IDC_LIST1,19,118,73,64,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,147,117,72,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Allowed Genres",IDC_STATIC,19,107,50,8
+    LTEXT           "Banned Genres",IDC_STATIC,148,106,50,8
+    PUSHBUTTON      ">>>",IDC_BUTTON1,101,127,40,13
+    PUSHBUTTON      "<<<",IDC_BUTTON2,101,146,39,14
+    RTEXT           "Channel:",IDC_STATIC,7,35,59,8
+    EDITTEXT        IDC_CHANNEL,73,32,94,12,ES_AUTOHSCROLL
+    RTEXT           "Publish Key:",IDC_STATIC,9,51,59,8
+    EDITTEXT        IDC_PUBLISH,73,48,168,12,ES_AUTOHSCROLL
+    RTEXT           "Subscribe Key:",IDC_STATIC,9,67,59,8
+    EDITTEXT        IDC_SUBSCRIBE,73,64,168,12,ES_AUTOHSCROLL
+    RTEXT           "Origin:",IDC_STATIC,7,84,59,8
+    EDITTEXT        IDC_ORIGIN,73,81,94,12,ES_AUTOHSCROLL
+END
+
+IDD_PLAYBACK_STATE DIALOGEX 0, 0, 260, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Playback State Demo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Pattern:",IDC_STATIC,12,8,28,8
+    EDITTEXT        IDC_PATTERN,8,16,244,12,ES_AUTOHSCROLL
+    LTEXT           "State:",IDC_STATIC,12,36,21,8
+    EDITTEXT        IDC_STATE,8,44,244,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Context menu test area - right click me",IDC_CONTEXTMENU,8,60,244,14
+    PUSHBUTTON      "Play",IDC_PLAY,12,76,36,14
+    PUSHBUTTON      "Pause",IDC_PAUSE,52,76,36,14
+    PUSHBUTTON      "Stop",IDC_STOP,92,76,36,14
+    PUSHBUTTON      "Prev",IDC_PREV,132,76,36,14
+    PUSHBUTTON      "Next",IDC_NEXT,172,76,36,14
+    PUSHBUTTON      "Rand",IDC_RAND,212,76,36,14
+END
+
+IDD_DSP DIALOGEX 0, 0, 284, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sample DSP Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,226,64,50,14
+    CONTROL         "",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,12,12,260,24
+    CTEXT           "N dB",IDC_SLIDER_LABEL,120,44,44,8
+END
+
+IDD_QUEUE DIALOGEX 0, 0, 373, 322
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST1,15,42,73,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,143,42,78,123,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Allowed Genres",IDC_STATIC,15,31,50,8
+    LTEXT           "Banned Genres",IDC_STATIC,144,31,50,8
+    PUSHBUTTON      ">>>",IDC_BUTTON1,95,79,40,13
+    PUSHBUTTON      "<<<",IDC_BUTTON2,95,98,39,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CS_CONFIGVIEW, DIALOG
+    BEGIN
+    END
+
+    IDD_MYPREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_PLAYBACK_STATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_QUEUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
